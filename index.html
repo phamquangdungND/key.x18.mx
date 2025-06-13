@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="vn">
 <head>
     <link rel="stylesheet" href="https://api.cmsnt.co/cdn/3041975/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/gh/nguyenit2609/INDEX-BOSS/Js.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
-</head>  
+</head>     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Ngày Hôm Nay Là</title>
+    <title>KEY NGÀY HÔM NAY LÀ</title>
     <script>
         function updateTime() {
             var now = new Date();
@@ -18,7 +18,7 @@
             var minutes = now.getMinutes();
             var seconds = now.getSeconds();
             var day = now.getDate();
-            var month = now.getMonth() + 1; // Tháng bắt đầu từ 0
+            var month = now.getMonth() + 1; // ThÃ¡ng báº¯t Äáº§u tá»« 0
             var year = now.getFullYear();
 
             hours = (hours < 10 ? "0" : "") + hours;
@@ -28,12 +28,12 @@
             var timeString = hours + ":" + minutes + ":" + seconds;
             document.getElementById("clock").innerHTML = timeString;
 
-            // Cập nhật ngày
-            var dateString = `Hôm nay là ngày ${day}/${month}/${year}`;
+            // Cáº­p nháº­t ngÃ y
+            var dateString = `HOM NAY LA NGAY ${day}/${month}/${year}`;
             document.getElementById("dateDisplay").innerHTML = dateString;
 
-            // Cập nhật tiêu đề
-            document.title = `Key Ngày ${day}/${month}/${year} Là`;
+            // Cáº­p nháº­t tiÃªu Äá»
+            document.title = `KEY NGAY ${day}/${month}/${year} LA `;
 
             setTimeout(updateTime, 1000);
         }
@@ -45,7 +45,7 @@
             if (key) {
                 keyInput.value = key;
             } else {
-                keyInput.value = 'No key found';
+                keyInput.value = 'Ban Chua Lay Key';
             }
         }
 
@@ -53,7 +53,7 @@
             const keyInput = document.getElementById('keyInput');
             keyInput.select();
             document.execCommand('copy');
-            alert('Key copied to clipboard: ' + keyInput.value);
+            alert('Da Sao Chep Key : ' + keyInput.value);
         }
 
         function toggleMusic() {
@@ -69,7 +69,7 @@
             }
         }
 
-        window.onload = function () {
+        window.onload = function() {
             updateTime();
             getQueryParam();
         };
@@ -77,42 +77,54 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #7bdc91;
+
+            background: url("https://toantuoity.com/wp-content/uploads/2024/07/sex-anh-anime-1.jpg") no-repeat center center/cover;
+
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
+
         .loading-container {
             text-align: center;
             padding: 20px;
             border: 2px solid #ef8682;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            background-color: #fff;
+
+            background: url("https://anhchibi.com/wp-content/uploads/2024/12/hinh-anh-nho-cute-chibi.jpg") no-repeat center center/cover;
+
             animation: pulse 1.5s infinite;
             width: 80vw;
             max-width: 400px;
         }
+
         @keyframes pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 border-color: #ef8682;
             }
+
             50% {
                 border-color: #e9514d;
             }
         }
+
         h1 {
             color: #03fcec;
             font-size: 28px;
             margin-bottom: 20px;
         }
+
         .key-container {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         input {
             text-align: center;
             width: 80%;
@@ -123,11 +135,16 @@
             font-size: 16px;
             transition: border-color 0.3s ease-in-out;
         }
-        input:hover, input:focus {
+
+        input:hover,
+        input:focus {
             border-color: #e9514d;
         }
+
         button {
-            background-color: #ef8682;
+
+            background: url("https://pencco.com.vn/wp-content/uploads/2024/09/Mau-do-1-768x576.jpg") no-repeat center center/cover;
+
             color: #fff;
             padding: 12px 24px;
             border: none;
@@ -137,26 +154,92 @@
             transition: background-color 0.3s ease-in-out;
             margin-bottom: 10px;
         }
+
         button:hover {
-            background-color: #e9514d;
+
+            background: url("https://pencco.com.vn/wp-content/uploads/2024/09/Mau-do-1-768x576.jpg") no-repeat center center/cover;
+
         }
+
         .footer {
             text-align: center;
             margin-top: 20px;
             color: #555;
             font-size: 14px;
         }
+
+        .avatar-container {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            animation: shake 3s infinite ease-in-out;
+            border: 3px solid white;
+        }
+
+        .avatar:hover {
+            transform: scale(1.2) rotate(5deg);
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(5px);
+            }
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .username {
+            font-size: 20px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 5px 15px;
+            border-radius: 8px;
+            color: white;
+            margin-top: 8px;
+            text-transform: uppercase;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Bật nhạc nền -->
+
+    <div class="avatar-container">
+        <div class="avatar">
+            <img src="https://i.imgur.com/0jiVIyw.jpg" alt="khanhdzai">
+        </div>
+        <div class="username">PHẠM QUANG DŨNG</div></div>
+    </div>
+
+    <!-- Báº­t nháº¡c ná»n -->
     <audio id="backgroundMusic" loop>
-        <source src="https://rr4---sn-npoeens7.googlevideo.com/videoplayback?expire=1738570417&ei=USagZ4Vk6_nE3w-x7KCJBg&ip=172.64.236.154&id=o-AAimGCMhLlnkFgQqbULLm4c5rLQiwpJXAB9aLLiMq4KH&itag=140&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&bui=AY2Et-NhXWJuEA_aAiv4s4CMjS0GNJ5kVy9qweCNCESmMcFo7gwC7u2n02jFCTAEYi17h2MNMEdZl1cQ&spc=9kzgDe0cTB4wLXbrqCENjNXF39FeMaXArlp1tUthP0Mj7BFN6PRwObzbGw&vprv=1&svpuc=1&mime=audio%2Fmp4&ns=ciOnzHLpGKSoPvsrdclhYhoQ&rqh=1&gir=yes&clen=12915678&dur=798.000&lmt=1726163663589433&keepalive=yes&lmw=1&fexp=24350590,24350737,24350827,24350933,24350961,24350977,24350999,24351028,24351059,24351082,51326932,51371294&c=TVHTML5&sefc=1&txp=5432434&n=oOVy0aSPT2m58w&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRAIgdqeR7ocPNLzfZ8ZpZkVJl9uhPiHnTmW-oIiDy0YosScCIGMbR3y4GUPaOW9VkEYfsnYGZDMJ1_1ub20amE3pVmcd&title=Cari+Pokemon+-+Mit+x+AM+Remix+%E2%9C%AA+Mochi+Entertainment+%7C%7C+Nh%E1%BA%A1c+Hot+Tiktok+Hay+Nh%E1%BA%A5t+2023%23mochi&rm=sn-h5q6l7l&rrc=104,80&req_id=442fafdb2aeca3ee&ipbypass=yes&redirect_counter=2&cm2rm=sn-8qj-2m0e7s&cms_redirect=yes&cmsv=e&met=1738548821,&mh=0l&mip=2001:ee0:4e1d:40f0:9918:bf84:9f64:6e22&mm=29&mn=sn-npoeens7&ms=rdu&mt=1738548536&mv=m&mvi=4&pl=48&rms=rdu,au&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=AGluJ3MwRgIhAPO94cqTh07m1khvJ4OP-lmnxEMqYdMS4DdevPGj-IEbAiEAmoIOxCicTNa-4Z5bebL0gq_d-TwAiwySZjFQUB5sSu8%3D" type="audio/mpeg">
+        <source src="https://www.webkey.x10.mx/Pikachu.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <div class="loading-container">
-        <h1>Key Ngày Là</h1>
+        <h1>KEY NGAY LA</h1>
         <div class="key-container">
             <input type="text" id="keyInput" readonly>
             <button onclick="copyToClipboard()">Copy Key</button>
@@ -164,11 +247,12 @@
         </div>
         <div id="dateDisplay" style="margin-top: 10px; font-size: 18px; color: #555;"></div>
         <div class="footer">
-            <b>Copyright By 
-                <a href="https://zalo.me/0336502026" class="admin-link">PHẠM QUANG DŨNG</a> | 
+            <b>Copyright By
+                <a href="https://zalo.me/0336502026" class="admin-link">PHẠM QUANG DŨNG </a></a> |
                 Time: <span id="clock"></span>
             </b>
         </div>
     </div>
 </body>
+
 </html>
